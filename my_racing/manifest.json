@@ -8,14 +8,14 @@
 		"libs/modules/promise/promise.js"
 	],
 	"game": [
-		"bin-debug/Game.js",
 		"bin-debug/control/ScreenMovies.js",
+		"bin-debug/Data.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/common/common.js",
 		"bin-debug/control/CarFactory.js",
-		"bin-debug/Data.js",
+		"bin-debug/Game.js",
 		"bin-debug/control/ViewManager.js",
 		"bin-debug/events/SceneEvents.js",
 		"bin-debug/utils/MoveUtil.js",

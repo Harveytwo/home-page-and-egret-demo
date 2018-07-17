@@ -219,17 +219,29 @@ var SceneGame = /** @class */ (function (_super) {
         }
         for (var i = CarFactory.getInstance().liveCarArray.length - 1, car; i >= 0; i--) {
             car = CarFactory.getInstance().liveCarArray[i];
-            if (this.isHit(car, this.heroCon)) {
+            // if (this.isHit(car, this.heroCon)) {
+            if (this.isHit(car, this.car)) {
                 Data.gameResult = false;
                 return true;
             }
         }
     };
     //碰撞检测
-    SceneGame.prototype.isHit = function (target1, target2) {
+    SceneGame.prototype.isHit = function (target1, target2, isCon) {
         var rect1 = target1;
         var rect2 = target2;
-        if (Math.abs(rect1.x - rect2.x) < (rect1.width + rect2.width) * 0.5 && Math.abs(rect1.y - rect2.y) < (rect1.height + rect2.height) * 0.5 - this.carLight.height) {
+        var rect2X;
+        var rect2Y;
+        if (isCon) {
+            rect2X = rect2.x;
+            rect2Y = rect2.y;
+        }
+        else {
+            // 如果传进来不是容器，但有父容器，转为全局坐标
+            rect2X = rect2.localToGlobal().x;
+            rect2Y = rect2.localToGlobal().y;
+        }
+        if (Math.abs(rect1.x - rect2X) < (rect1.width + rect2.width) * 0.5 && Math.abs(rect1.y - rect2Y) < (rect1.height + rect2.height) * 0.5) {
             return true;
         }
         return false;
