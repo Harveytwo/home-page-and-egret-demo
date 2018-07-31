@@ -1,14 +1,14 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var ViewManager = /** @class */ (function (_super) {
+var __reflect = (this && this.__reflect) || function (p, c, t) {
+    p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
+};
+var __extends = this && this.__extends || function __extends(t, e) { 
+ function r() { 
+ this.constructor = t;
+}
+for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
+r.prototype = e.prototype, t.prototype = new r();
+};
+var ViewManager = (function (_super) {
     __extends(ViewManager, _super);
     function ViewManager() {
         var _this = _super.call(this) || this;
@@ -30,10 +30,10 @@ var ViewManager = /** @class */ (function (_super) {
     //初始，添加游戏开始界面
     ViewManager.prototype.start = function () {
         this.initListener();
-        this.addChild(this.sceneGame);
-        this.sceneGame.start();
-        // this.addChild(this.sceneBegin);
-        // this.sceneBegin.start(); 
+        // this.addChild(this.sceneGame);
+        // this.sceneGame.start();
+        this.addChild(this.sceneBegin);
+        this.sceneBegin.start();
     };
     //初始化事件监听
     ViewManager.prototype.initListener = function () {
@@ -87,3 +87,5 @@ var ViewManager = /** @class */ (function (_super) {
     };
     return ViewManager;
 }(egret.DisplayObjectContainer));
+__reflect(ViewManager.prototype, "ViewManager");
+//# sourceMappingURL=ViewManager.js.map

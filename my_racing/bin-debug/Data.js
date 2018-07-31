@@ -1,8 +1,11 @@
+var __reflect = (this && this.__reflect) || function (p, c, t) {
+    p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
+};
 /**
  * 游戏相关数据
  *
  */
-var Data = /** @class */ (function () {
+var Data = (function () {
     function Data() {
     }
     //默认为true,表示是成功的；false表示失败，没有完成任务
@@ -23,3 +26,5 @@ var Data = /** @class */ (function () {
     Data.mostSpeed = 36;
     return Data;
 }());
+__reflect(Data.prototype, "Data");
+//# sourceMappingURL=Data.js.map

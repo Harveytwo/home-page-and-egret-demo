@@ -27,3 +27,4 @@ var game;
     }
     game.touchAction = touchAction;
 })(game || (game = {}));
+//# sourceMappingURL=Game.js.map

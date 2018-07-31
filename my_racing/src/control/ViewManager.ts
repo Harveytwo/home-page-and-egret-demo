@@ -31,10 +31,10 @@ class ViewManager extends egret.DisplayObjectContainer {
     public start() {
         this.initListener();
 
-        this.addChild(this.sceneGame);
-        this.sceneGame.start();
-        // this.addChild(this.sceneBegin);
-        // this.sceneBegin.start(); 
+        // this.addChild(this.sceneGame);
+        // this.sceneGame.start();
+        this.addChild(this.sceneBegin);
+        this.sceneBegin.start(); 
     }
 
     //初始化事件监听
