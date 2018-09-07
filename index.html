@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>小游戏列表</h1>
+    <ul class="demo_list">
+        <li>
+            <a href="http://www.baidu.com" target="blank">baidu</a>
+        </li>
+    </ul>
+    <script>
+        let result = [
+            {
+                name: '赛车',
+                url: 'carRacing'
+            },
+            {
+                name: '飞机',
+                url: 'thePlane'
+            },
+            {
+                name: '足球',
+                url: 'soccer'
+            },
+        ]
+        
+        let list_wp = document.querySelector('.demo_list');
+        let len = result.length;
+        let str = '';
+        for (let i=0; i<len; i++) {
+            str = str + '<li><a href="https://harveytwo.gitee.io/egret_demo/'+result[i].url+'" target="blank">'+result[i].name+'</a></li>';
+        }
+        list_wp.innerHTML = str;
+    </script>
+</body>
+
+</html>
