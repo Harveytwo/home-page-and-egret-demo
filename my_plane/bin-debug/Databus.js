@@ -1,4 +1,7 @@
-var Databus = /** @class */ (function () {
+var __reflect = (this && this.__reflect) || function (p, c, t) {
+    p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
+};
+var Databus = (function () {
     function Databus() {
         this.pool = Pool.getInstance();
         this.reset();
@@ -43,3 +46,4 @@ var Databus = /** @class */ (function () {
     };
     return Databus;
 }());
+__reflect(Databus.prototype, "Databus");

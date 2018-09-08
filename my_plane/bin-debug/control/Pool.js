@@ -1,10 +1,13 @@
+var __reflect = (this && this.__reflect) || function (p, c, t) {
+    p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
+};
 /**
  * 简易的对象池实现
  * 用于对象的存贮和重复使用
  * 可以有效减少对象创建开销和避免频繁的垃圾回收
  * 提高游戏性能
  */
-var Pool = /** @class */ (function () {
+var Pool = (function () {
     function Pool() {
         this.poolDic = {};
     }
@@ -51,3 +54,4 @@ var Pool = /** @class */ (function () {
     };
     return Pool;
 }());
+__reflect(Pool.prototype, "Pool");
