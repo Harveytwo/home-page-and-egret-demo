@@ -16,29 +16,55 @@
             <a href="http://www.baidu.com" target="blank">baidu</a>
         </li>
     </ul>
+    <h1>我的4399游戏</h1>
+    <ul class="my_4399">
+        <li>
+            <a href="http://www.baidu.com" target="blank">baidu</a>
+        </li>
+    </ul>
     <script>
-        let result = [
-            {
-                name: '赛车',
-                url: 'carRacing'
-            },
-            {
-                name: '飞机',
-                url: 'thePlane'
-            },
-            {
-                name: '足球',
-                url: 'soccer'
-            },
-        ]
-        
-        let list_wp = document.querySelector('.demo_list');
-        let len = result.length;
-        let str = '';
-        for (let i=0; i<len; i++) {
-            str = str + '<li><a href="//www.nankio.cn/games/'+result[i].url+'" target="blank">'+result[i].name+'</a></li>';
-        }
-        list_wp.innerHTML = str;
+        (function () {
+            let result = [
+                {
+                    name: '赛车',
+                    url: 'carRacing'
+                },
+                {
+                    name: '飞机',
+                    url: 'thePlane'
+                },
+                {
+                    name: '足球',
+                    url: 'soccer'
+                },
+            ]
+
+            let list_wp = document.querySelector('.demo_list');
+            let len = result.length;
+            let str = '';
+            for (let i = 0; i < len; i++) {
+                str = str + '<li><a href="//www.nankio.cn/games/' + result[i].url + '" target="blank">' + result[i].name + '</a></li>';
+            }
+            list_wp.innerHTML = str;
+        })();
+
+
+        (function () {
+            let result = [
+                {
+                    name: '赛车',
+                    url: '//www.4399.com/flash/200266.htm'
+                }
+            ]
+
+            let list_wp = document.querySelector('.my_4399');
+            let len = result.length;
+            let str = '';
+            for (let i = 0; i < len; i++) {
+                str = str + '<li><a href="' + result[i].url + '" target="blank">' + result[i].name + '</a></li>';
+            }
+            list_wp.innerHTML = str;
+        })()
     </script>
 </body>
 
