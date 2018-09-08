@@ -81,3 +81,4 @@ var Enemy = (function (_super) {
     return Enemy;
 }(egret.Sprite));
 __reflect(Enemy.prototype, "Enemy");
+//# sourceMappingURL=Enemy.js.map

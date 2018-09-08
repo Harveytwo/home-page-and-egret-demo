@@ -286,3 +286,4 @@ var SceneGame = (function (_super) {
     return SceneGame;
 }(egret.DisplayObjectContainer));
 __reflect(SceneGame.prototype, "SceneGame");
+//# sourceMappingURL=SceneGame.js.map

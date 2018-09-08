@@ -57,3 +57,4 @@ var Bullet = (function (_super) {
     return Bullet;
 }(egret.Sprite));
 __reflect(Bullet.prototype, "Bullet");
+//# sourceMappingURL=Bullet.js.map

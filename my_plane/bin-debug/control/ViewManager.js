@@ -85,3 +85,4 @@ var ViewManager = (function (_super) {
     return ViewManager;
 }(egret.DisplayObjectContainer));
 __reflect(ViewManager.prototype, "ViewManager");
+//# sourceMappingURL=ViewManager.js.map

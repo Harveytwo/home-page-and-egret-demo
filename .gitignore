@@ -1,0 +1,6 @@
+.DS_Store
+
+my_plane/
+/my_plane/bin-release/
+/my_racing/bin-debug/
+/my_racing/bin-release/

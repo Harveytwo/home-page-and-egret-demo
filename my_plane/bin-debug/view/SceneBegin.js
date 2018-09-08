@@ -60,3 +60,4 @@ var SceneBegin = (function (_super) {
     return SceneBegin;
 }(egret.DisplayObjectContainer));
 __reflect(SceneBegin.prototype, "SceneBegin");
+//# sourceMappingURL=SceneBegin.js.map

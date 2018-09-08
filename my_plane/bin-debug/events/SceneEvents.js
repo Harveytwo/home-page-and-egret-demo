@@ -22,3 +22,4 @@ var SceneEvents = (function (_super) {
     return SceneEvents;
 }(egret.Event));
 __reflect(SceneEvents.prototype, "SceneEvents");
+//# sourceMappingURL=SceneEvents.js.map
