@@ -1,0 +1,270 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,bg_png,car0_png,car1_png,car2_png,carLight_png,failedNotice_png,hero_png,heroDied_png,heroProtected_png,heroSlow_png,loadingBg_png,loadingCar_png,noticeBg_png,playAgainBtn_png,roadblock_png,roadnum_fnt,roadnum_png,roadnumber0_png,roadnumber1_png,roadnumber2_png,roadnumber3_png,roadnumber4_png,roadnumber5_png,roadnumber6_png,roadnumber7_png,roadnumber8_png,roadnumber9_png,startGameBtn_png,startLine_png,startnum1_png,startnum2_png,startnum3_png,succeededNotice_png,succeededrotation_png,timenum_fnt,timenum_png,timenumber0_png,timenumber1_png,timenumber11_png,timenumber2_png,timenumber3_png,timenumber4_png,timenumber5_png,timenumber6_png,timenumber7_png,timenumber8_png,timenumber9_png,timenum2_png,roadnumBg_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_jpg",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egret_icon_png",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "bg_png",
+			"type": "image",
+			"url": "mySources/bg.png"
+		},
+		{
+			"name": "car0_png",
+			"type": "image",
+			"url": "mySources/car0.png"
+		},
+		{
+			"name": "car1_png",
+			"type": "image",
+			"url": "mySources/car1.png"
+		},
+		{
+			"name": "car2_png",
+			"type": "image",
+			"url": "mySources/car2.png"
+		},
+		{
+			"name": "carLight_png",
+			"type": "image",
+			"url": "mySources/carLight.png"
+		},
+		{
+			"name": "failedNotice_png",
+			"type": "image",
+			"url": "mySources/failedNotice.png"
+		},
+		{
+			"name": "hero_png",
+			"type": "image",
+			"url": "mySources/hero.png"
+		},
+		{
+			"name": "heroDied_png",
+			"type": "image",
+			"url": "mySources/heroDied.png"
+		},
+		{
+			"name": "heroProtected_png",
+			"type": "image",
+			"url": "mySources/heroProtected.png"
+		},
+		{
+			"name": "heroSlow_png",
+			"type": "image",
+			"url": "mySources/heroSlow.png"
+		},
+		{
+			"name": "loadingBg_png",
+			"type": "image",
+			"url": "mySources/loadingBg.png"
+		},
+		{
+			"name": "loadingCar_png",
+			"type": "image",
+			"url": "mySources/loadingCar.png"
+		},
+		{
+			"name": "noticeBg_png",
+			"type": "image",
+			"url": "mySources/noticeBg.png"
+		},
+		{
+			"name": "playAgainBtn_png",
+			"type": "image",
+			"url": "mySources/playAgainBtn.png"
+		},
+		{
+			"name": "roadblock_png",
+			"type": "image",
+			"url": "mySources/roadblock.png"
+		},
+		{
+			"name": "roadnum_fnt",
+			"type": "font",
+			"url": "mySources/roadnum/roadnum.fnt"
+		},
+		{
+			"name": "roadnum_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnum.png"
+		},
+		{
+			"name": "roadnumber0_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber0.png"
+		},
+		{
+			"name": "roadnumber1_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber1.png"
+		},
+		{
+			"name": "roadnumber2_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber2.png"
+		},
+		{
+			"name": "roadnumber3_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber3.png"
+		},
+		{
+			"name": "roadnumber4_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber4.png"
+		},
+		{
+			"name": "roadnumber5_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber5.png"
+		},
+		{
+			"name": "roadnumber6_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber6.png"
+		},
+		{
+			"name": "roadnumber7_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber7.png"
+		},
+		{
+			"name": "roadnumber8_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber8.png"
+		},
+		{
+			"name": "roadnumber9_png",
+			"type": "image",
+			"url": "mySources/roadnum/roadnumber9.png"
+		},
+		{
+			"name": "startGameBtn_png",
+			"type": "image",
+			"url": "mySources/startGameBtn.png"
+		},
+		{
+			"name": "startLine_png",
+			"type": "image",
+			"url": "mySources/startLine.png"
+		},
+		{
+			"name": "startnum1_png",
+			"type": "image",
+			"url": "mySources/startnum1.png"
+		},
+		{
+			"name": "startnum2_png",
+			"type": "image",
+			"url": "mySources/startnum2.png"
+		},
+		{
+			"name": "startnum3_png",
+			"type": "image",
+			"url": "mySources/startnum3.png"
+		},
+		{
+			"name": "succeededNotice_png",
+			"type": "image",
+			"url": "mySources/succeededNotice.png"
+		},
+		{
+			"name": "succeededrotation_png",
+			"type": "image",
+			"url": "mySources/succeededrotation.png"
+		},
+		{
+			"name": "timenum_fnt",
+			"type": "font",
+			"url": "mySources/timenum/timenum.fnt"
+		},
+		{
+			"name": "timenum_png",
+			"type": "image",
+			"url": "mySources/timenum/timenum.png"
+		},
+		{
+			"name": "timenumber0_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber0.png"
+		},
+		{
+			"name": "timenumber1_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber1.png"
+		},
+		{
+			"name": "timenumber11_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber11.png"
+		},
+		{
+			"name": "timenumber2_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber2.png"
+		},
+		{
+			"name": "timenumber3_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber3.png"
+		},
+		{
+			"name": "timenumber4_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber4.png"
+		},
+		{
+			"name": "timenumber5_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber5.png"
+		},
+		{
+			"name": "timenumber6_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber6.png"
+		},
+		{
+			"name": "timenumber7_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber7.png"
+		},
+		{
+			"name": "timenumber8_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber8.png"
+		},
+		{
+			"name": "timenumber9_png",
+			"type": "image",
+			"url": "mySources/timenum/timenumber9.png"
+		},
+		{
+			"name": "timenum2_png",
+			"type": "image",
+			"url": "mySources/timenum.png"
+		},
+		{
+			"name": "roadnumBg_png",
+			"type": "image",
+			"url": "mySources/roadnumBg.png"
+		}
+	]
+}

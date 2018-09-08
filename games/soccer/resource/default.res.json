@@ -1,0 +1,90 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,ball_1_png,bg_game_jpg,bg_menu_jpg,but_exit_png,but_play_png,player_sprite_1_png,player_sprite_2_png,player_sprite_3_png,player_sprite_4_png,player_sprite_5_png,player_sprite_6_png,player_sprite_7_png,shadow_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_jpg",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egret_icon_png",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "ball_1_png",
+			"type": "image",
+			"url": "assets/game/ball_1.png"
+		},
+		{
+			"name": "bg_game_jpg",
+			"type": "image",
+			"url": "assets/game/bg_game.jpg"
+		},
+		{
+			"name": "bg_menu_jpg",
+			"type": "image",
+			"url": "assets/game/bg_menu.jpg"
+		},
+		{
+			"name": "but_exit_png",
+			"type": "image",
+			"url": "assets/game/but_exit.png"
+		},
+		{
+			"name": "but_play_png",
+			"type": "image",
+			"url": "assets/game/but_play.png"
+		},
+		{
+			"name": "player_sprite_1_png",
+			"type": "image",
+			"url": "assets/game/player_sprite_1.png"
+		},
+		{
+			"name": "player_sprite_2_png",
+			"type": "image",
+			"url": "assets/game/player_sprite_2.png"
+		},
+		{
+			"name": "player_sprite_3_png",
+			"type": "image",
+			"url": "assets/game/player_sprite_3.png"
+		},
+		{
+			"name": "player_sprite_4_png",
+			"type": "image",
+			"url": "assets/game/player_sprite_4.png"
+		},
+		{
+			"name": "player_sprite_5_png",
+			"type": "image",
+			"url": "assets/game/player_sprite_5.png"
+		},
+		{
+			"name": "player_sprite_6_png",
+			"type": "image",
+			"url": "assets/game/player_sprite_6.png"
+		},
+		{
+			"name": "player_sprite_7_png",
+			"type": "image",
+			"url": "assets/game/player_sprite_7.png"
+		},
+		{
+			"name": "shadow_png",
+			"type": "image",
+			"url": "assets/game/shadow.png"
+		}
+	]
+}
