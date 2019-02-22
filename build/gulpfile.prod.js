@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var fileinclude = require('gulp-file-include');
 var autoprefixer = require('gulp-autoprefixer'); // 处理css中浏览器兼容的前缀  
 var rename = require('gulp-rename'); //重命名  
 var cssnano = require('gulp-cssnano'); // css的层级压缩合并
@@ -16,7 +17,18 @@ function prod() {
    * HTML处理 
    */
   gulp.task('html', function () {
-    return gulp.src(Config.html.src).pipe(gulp.dest(Config.html.dist));
+    return gulp.src(Config.html.src)
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      })).pipe(gulp.dest(Config.html.dist));
+  });
+  gulp.task('htmlPages', function () {
+    return gulp.src(Config.htmlPages.src)
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      })).pipe(gulp.dest(Config.htmlPages.dist));
   });
   /** 
    * assets文件夹下的所有文件处理 
@@ -76,7 +88,7 @@ function prod() {
   })
 
   gulp.task('build', function (cb) {
-    sequence('clean', 'html', 'css', 'sass', 'js', 'assets', 'images')(cb);
+    sequence('clean', 'html', 'htmlPages', 'css', 'sass', 'js', 'assets', 'images')(cb);
   })
   // gulp.task('build', ['clean', 'html', 'css', 'sass', 'js', 'assets', 'images']);
 

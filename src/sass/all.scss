@@ -1,4 +1,26 @@
 @charset "utf-8";
 
 body {
+  min-width: 960px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.tit {
+  color: #000;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.demo_list,.my_4399 {
+  padding-left: 40px;
+  a {
+    text-decoration: underline;
+    color: rgb(167, 117, 228);
+  }
+}
+
+.iframe_blog {
+  width: 60%;
+  height: 600px;
 }

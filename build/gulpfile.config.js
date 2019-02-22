@@ -6,9 +6,16 @@ var Config = {
   src: SRC_DIR,
   dist: DIST_DIR,
   dist_files: DIST_FILES,
+  temp: {
+    src: SRC_DIR + 'templates/*.html',
+  },
   html: {
     src: SRC_DIR + '*.html',
     dist: DIST_DIR
+  },
+  htmlPages: {
+    src: SRC_DIR + 'views/*.html',
+    dist: DIST_DIR + 'views'
   },
   assets: {
     src: SRC_DIR + 'assets/**/*',            // assets目录：./src/assets  

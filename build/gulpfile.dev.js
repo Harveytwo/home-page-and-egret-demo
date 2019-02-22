@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var fileinclude = require('gulp-file-include');
 var autoprefixer = require('gulp-autoprefixer'); // 处理css中浏览器兼容的前缀  
 var rename = require('gulp-rename'); //重命名  
 var cssnano = require('gulp-cssnano'); // css的层级压缩合并
@@ -18,9 +19,22 @@ function dev() {
    * HTML处理 
    */
   gulp.task('html:dev', function () {
-    return gulp.src(Config.html.src).pipe(gulp.dest(Config.html.dist)).pipe(reload({
-      stream: true
-    }));
+    return gulp.src(Config.html.src)
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      })).pipe(gulp.dest(Config.html.dist)).pipe(reload({
+        stream: true
+      }));
+  });
+  gulp.task('htmlPages:dev', function () {
+    return gulp.src(Config.htmlPages.src)
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      })).pipe(gulp.dest(Config.htmlPages.dist)).pipe(reload({
+        stream: true
+      }));
   });
   /** 
    * assets文件夹下的所有文件处理 
@@ -72,13 +86,17 @@ function dev() {
 
   var devCb = function () {
     browserSync.init({
+      files: [Config.dist+'views/**'],
       server: {
-        baseDir: Config.dist
+        baseDir: Config.dist,
       }
       , notify: false
     });
     // Watch .html files  
     gulp.watch(Config.html.src, ['html:dev']);
+    gulp.watch(Config.temp.src, ['html:dev']);
+    gulp.watch(Config.temp.src, ['htmlPages:dev']);
+    gulp.watch(Config.htmlPages.src, ['htmlPages:dev']);
     // Watch .css files  
     gulp.watch(Config.css.src, ['css:dev']);
     // Watch .scss files  
@@ -91,7 +109,7 @@ function dev() {
     gulp.watch(Config.img.src, ['images:dev']);
   }
   gulp.task('dev', function () {
-    sequence('clean', 'html:dev', 'css:dev', 'sass:dev', 'js:dev', 'assets:dev', 'images:dev')(devCb)
+    sequence('clean', 'html:dev', 'htmlPages:dev', 'css:dev', 'sass:dev', 'js:dev', 'assets:dev', 'images:dev')(devCb)
   })
 
   const clean = require('gulp-clean');

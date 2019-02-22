@@ -11,20 +11,24 @@
 </head>
 
 <body>
-  555879475
-  <h1>小游戏列表</h1>
+  @@include('./templates/header.html')
+
+  <iframe class="iframe_blog" src="//blog.nankio.cn/" frameborder="0"></iframe>
+  <h1 class="tit">小游戏列表</h1>
   <ul class="demo_list">
     <li>
       <a href="http://www.baidu.com" target="blank">baidu</a>
     </li>
   </ul>
-  <h1>我的4399游戏</h1>
+  <h1 class="tit">我的4399游戏</h1>
   <ul class="my_4399">
     <li>
       <a href="http://www.baidu.com" target="blank">baidu</a>
     </li>
   </ul>
+
   <script>
+    // demo
     (function () {
       let result = [
         {
@@ -50,13 +54,21 @@
       list_wp.innerHTML = str;
     })();
 
-
+    // 4399
     (function () {
       let result = [
         {
           name: '我是方块',
           url: '//www.4399.com/flash/200266.htm'
-        }
+        },
+        {
+          name: '躲避黑洞',
+          url: 'http://www.4399.com/flash/200478.htm'
+        },
+        {
+          name: '海贼拼图',
+          url: 'http://www.4399.com/flash/203695.htm'
+        },
       ]
 
       let list_wp = document.querySelector('.my_4399');

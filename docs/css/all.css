@@ -1,0 +1,19 @@
+body {
+  min-width: 960px;
+  box-sizing: border-box;
+  padding: 10px 20px; }
+
+.tit {
+  color: #000;
+  font-size: 24px;
+  margin: 10px; }
+
+.demo_list, .my_4399 {
+  padding-left: 40px; }
+  .demo_list a, .my_4399 a {
+    text-decoration: underline;
+    color: #a775e4; }
+
+.iframe_blog {
+  width: 60%;
+  height: 600px; }
