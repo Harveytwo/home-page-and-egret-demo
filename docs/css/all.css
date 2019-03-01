@@ -17,3 +17,7 @@ body {
 .iframe_blog {
   width: 60%;
   height: 600px; }
+
+.nav ul {
+  display: flex;
+  justify-content: space-around; }

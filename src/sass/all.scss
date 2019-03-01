@@ -6,6 +6,8 @@ body {
   padding: 10px 20px;
 }
 
+
+// common
 .tit {
   color: #000;
   font-size: 24px;
@@ -23,4 +25,12 @@ body {
 .iframe_blog {
   width: 60%;
   height: 600px;
+}
+
+// nav
+.nav {
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
