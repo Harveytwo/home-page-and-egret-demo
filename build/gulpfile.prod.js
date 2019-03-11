@@ -47,11 +47,16 @@ function prod() {
    * SASS样式处理 
    */
   gulp.task('sass', function () {
-    return gulp.src([Config.sass.src, '!./src/sass/function.scss']).pipe(sass()).pipe(autoprefixer({
-      browsers: ['last 2 versions'],
+    return gulp.src([Config.sass.src, '!./src/sass/function.scss']).pipe(sass())
+    //执行压缩
+    .pipe(cssnano())
+    .pipe(autoprefixer({
+      browsers: [
+        'last 2 versions',
+        'Android >= 4.0'
+      ],
       cascade: false
     })).pipe(gulp.dest(Config.sass.dist))
-      .pipe(cssnano()) //执行压缩  
       .pipe(gulp.dest(Config.sass.dist));
   });
   /** 
